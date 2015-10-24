@@ -1,3 +1,8 @@
+## Write a short comment describing this function
+#So this function takes a matrix as an argument and defines 2 other functions.
+#setinverse and getinverse. setinverse applies solve to the matrix and returns
+#the inverse and getinverse retrieves the stored matrix.
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -14,6 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+#get retireves the cached matrix if any, and if not, setinverse caches the 
+#inverse.
 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
